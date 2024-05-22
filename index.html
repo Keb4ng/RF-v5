@@ -1,0 +1,703 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ribbonfish Prototype V5</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- splide  -->
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav
+          class="header-nav"
+          data-aos="fade-in"
+          data-aos-delay="100"
+          data-aos-once="true"
+        >
+          <div class="header-nav__logo">
+            <a href="./index.html"
+              ><img src="./media/rfLogo.png" alt="Ribbonfish Logo" />
+            </a>
+          </div>
+          <ul class="header-nav__links">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Our Commitment</a>
+            </li>
+            <li>
+              <a href="./sucess-stories.html">Success Stories</a>
+            </li>
+            <li>
+              <a href="./about-us.html">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="mobile-header">
+        <div class="mobile-header__logo">
+          <img src="./media/rfBaseLogo.png" alt="Ribbonfish Logo" />
+        </div>
+        <button class="mobile-header__btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="mobile-header__overlay">
+          <div class="mobile-header__menu">
+            <button class="mobile-header__close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mobile-header__menu-logo">
+              <img src="./media/rfLogo.png" alt="Ribbonfish" />
+            </div>
+            <ul>
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">Our Commitment</a>
+              </li>
+              <li>
+                <a href="./sucess-stories.html">Success Stories</a>
+              </li>
+              <li>
+                <a href="./about-us.html">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="banner">
+        <div class="banner__tagline">
+          <p data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
+            WE TURN YOUR VISION INTO REALITY
+          </p>
+          <h1 data-aos="fade-left" data-aos-delay="400" data-aos-once="true">
+            DREAM BIG,
+            <span data-aos="fade-left" data-aos-delay="600" data-aos-once="true"
+              >DELIVER BIGGER</span
+            >
+          </h1>
+        </div>
+        <button class="banner__btn" data-aos="fade-in" data-aos-once="true">
+          <a href="#welcome-anchor">
+            <span>Get Started</span>
+            <i class="fa-solid fa-angles-down"></i>
+          </a>
+        </button>
+      </section>
+
+      <section class="welcome-section" id="welcome-anchor">
+        <div class="custom-container">
+          <div class="ws-wrapper">
+            <div class="col">
+              <div
+                class="ws-wrapper__featured"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-once="true"
+                data-aos-offset="500"
+              >
+                <img src="./media/welcomeImg.png" alt="Team Photo" />
+              </div>
+            </div>
+            <div
+              class="col ws-wrapper__details"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-once="true"
+              data-aos-offset="500"
+            >
+              <p class="ws-wrapper__title">
+                <span>INTRODUCING</span>RIBBONFISH
+              </p>
+              <p>
+                Do you struggle with manual processes? Our industry expertise
+                and out-the-box thinking delivers innovative, flexible, and
+                scalable solutions. We accelerate delivery using
+                state-of-the-art platforms such as Salesforce, allowing
+                businesses to focus more efficiently on products and customers.
+              </p>
+              <p>
+                We streamline workflows, increase efficiencies, and transform
+                processes. Daring, opinionated, and challengers of the status
+                quo, we adopt a holistic end-to-end approach which captures
+                evidence-based insights to inform decisions and to enable you
+                achieve better business outcomes.
+              </p>
+              <button class="global-btn">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="welcome-section__fixed-bg"></div>
+      </section>
+
+      <section class="cta-section">
+        <div class="custom-container">
+          <div class="cta-wrapper">
+            <a
+              href="#"
+              class="col cta-wrapper__btn"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-once="true"
+              data-aos-offset="400"
+            >
+              <span class="cta-wrapper__label">Case Studies</span>
+              <div class="cta-wrapper__image">
+                <img src="./media/cta1.png" alt="Case Studies" />
+              </div>
+            </a>
+            <a
+              href="#"
+              class="col cta-wrapper__btn"
+              data-aos="fade-down"
+              data-aos-delay="400"
+              data-aos-once="true"
+              data-aos-offset="400"
+            >
+              <span class="cta-wrapper__label">Meet the Team</span>
+              <div class="cta-wrapper__image">
+                <img src="./media/cta2.png" alt="Meet the team" />
+              </div>
+            </a>
+            <a
+              href="#"
+              class="col cta-wrapper__btn"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-once="true"
+              data-aos-offset="400"
+            >
+              <span class="cta-wrapper__label">Ribbonfish News</span>
+              <div class="cta-wrapper__image">
+                <img src="./media/cta3.png" alt="Ribbonfish News" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="expertise-section">
+        <div class="custom-container">
+          <div
+            class="expertise"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-once="true"
+            data-aos-offset="400"
+          >
+            <div class="col">
+              <p class="section-title">OUR EXPERTISE</p>
+              <p class="section-tagline">
+                We have a talented team with years of publishing experience
+                between them. We acknowledge that the most important skill of
+                all is communication, but we are also wizards at the technical
+                aspects. This means you can concentrate on your core business
+                and do what you do best.
+              </p>
+              <div class="expertise__logos">
+                <div class="col">
+                  <img src="./media/exp1.png" alt="communication" />
+                  <p>
+                    Communication skills are critical and an integral part of
+                    our approach.
+                  </p>
+                </div>
+                <div class="col">
+                  <img src="./media/exp2.png" alt="Management" />
+                  <p>
+                    Change management is key (technology is often the easy bit…)
+                  </p>
+                </div>
+                <div class="col">
+                  <img src="./media/exp3.png" alt="Solutions" />
+                  <p>
+                    We have delivered solutions on Apex, .Net, Javascript, React
+                    and php.
+                  </p>
+                </div>
+                <div class="col">
+                  <img src="./media/exp4.png" alt="Platforms" />
+                  <p>
+                    On platforms such as Salesforce, Azure, WS02, WordPress &
+                    Sharepoint.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col expertise__featured">
+              <img
+                src="./media/marc.png"
+                alt="Marc Defosse"
+                data-aos="fade-left"
+                data-aos-delay="400"
+                data-aos-once="true"
+                data-aos-offset="400"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="expertise-section__bg"></div>
+      </section>
+
+      <section
+        class="brands-section"
+        data-aos="fade-in"
+        data-aos-delay="200"
+        data-aos-once="true"
+        data-aos-offset="400"
+      >
+        <p class="section-title --flex-column">
+          SOME OF THE BRANDS <span>WE WORK WITH</span>
+        </p>
+        <div class="splide brandsSplide" aria-label="brands-splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./media/logo/logo2.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo3.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo4.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo5.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo6.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo7.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo8.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo9.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo10.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo11.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo12.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo13.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo14.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo15.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo16.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo17.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo18.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo19.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo20.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo21.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo22.png" alt="Brands" />
+              </li>
+              <li class="splide__slide">
+                <img src="./media/logo/logo23.png" alt="Brands" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="ideas-section"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+        data-aos-offset="400"
+      >
+        <div class="custom-container">
+          <div class="ideas">
+            <p class="section-title --text-light">
+              GENERATING NEW IDEAS SOLVING BIG PROBLEMS
+            </p>
+            <div class="ideas-items">
+              <div class="col">
+                <span class="ideas-items__count" data-count="120"></span>
+                <span class="ideas-items__label"
+                  >YEARS OF INDUSTRY KNOWLEDGE</span
+                >
+                <img
+                  class="ideas-items__logo"
+                  src="./media/ideas1.png"
+                  alt="Ideas"
+                />
+              </div>
+              <div class="col">
+                <span class="ideas-items__count" data-count="25"></span>
+                <span class="ideas-items__label">EXPERT CONSULTANTS</span>
+                <img
+                  class="ideas-items__logo"
+                  src="./media/ideas2.png"
+                  alt="Ideas"
+                />
+              </div>
+
+              <div class="col">
+                <span class="ideas-items__count" data-count="215">+</span>
+                <span class="ideas-items__label">COMPLETED PROJECTS</span>
+                <img
+                  class="ideas-items__logo"
+                  src="./media/ideas3.png"
+                  alt="Ideas"
+                />
+              </div>
+
+              <div class="col">
+                <span class="ideas-items__count" data-count="2000">+</span>
+                <span class="ideas-items__label">CUPS OF COFFEE</span>
+                <img
+                  class="ideas-items__logo"
+                  src="./media/ideas4.png"
+                  alt="Ideas"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="testimonials-section"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+        data-aos-offset="400"
+      >
+        <div class="custom-container">
+          <div class="testimonials">
+            <div class="col">
+              <div
+                class="splide testimonialsSplide"
+                aria-label="testimonials-splide"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <p class="testimonials__comment">
+                        <span class="testimonials__qoute">
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        “Over and above their industry know-how and technical
+                        expertise, we have been blown away with Ribbonfish’s
+                        pragmatic and pacey outcome focused approach. The whole
+                        team are dedicated and passionate with a strong emphasis
+                        on delivering excellence. Thank you all for challenging
+                        our thinking and supporting us in delivering an industry
+                        leading technology solution with added business benefit
+                        – we’re looking forward to the next chapter!”
+                        <span class="testimonials__qoute">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                      </p>
+                      <div class="testimonials__client-wrapper">
+                        <div class="col-sm-2 testimonials__pic">
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALEAAACUCAMAAADrljhyAAAAMFBMVEXk5ueutLenrrHf4uPn6eqrsbTq7O3b3t/Jzc+4vcC1ur3Gysyxt7rX2tu9wcTR1dbDLeoMAAAEQUlEQVR4nO2c23LjIAxAMQhsDIb//9sFN93EmTQBhCW66/PQzqR9OKMR4qoIcXFxcXFxcXFxcXFxcXHxLwIZbokidk21xSURo/r+ZFhAzNFZLaXUifRrsi7OYlhno5bgtZ4OaO1DFIbb7RVGOD896d6kJ+8GzA3l5Evdm7R0aihnEIt/45uRaxwoziDsB989zuOEGbZPAb4p+3kQ5aXINyvLyO2aAVcqnJ0X/ihXCQ+hXCecagazMhTn8F05cirDVi2cYKwYIHyDsLaMdblk4nihHLh8G5L4psyVyqrNN8NjbEJjiPMSg2XBrGR7jKeZQRgsQlg7BuEZITxNnj7IleuJZ+RCbqxWVIy1JzeOqBCnIFOnBTIpOAocUjgpExvPmGK8Q5wW6KQg340YXKXYCaRpYdBJMU2WUlgodFJQT3sRLzz5jTCRYelgPFGu68H9NmMTOgiTlrf/1dj9OuPfF2NS4x61gtS4+WzlAGk9xu5AyI1F05nmE8S3Ih3WbquiFDYdYmxpV/SYA6EbtCv6HsWC+EgWdUy4I0nTONFyn3DAU59XoE9YqG/J2m6ZHiBPitZbm78hDuQXC8itnma4U1eYsactfVIgD7JYbqcBUZJXBt+cyc3KbLfpa+udKfnscQO2xhBrhmF3U24cfJyvhZrygu3qPwFNSzhG4UT9zanmFW44Sd64jSHWJQblMfdPbBXKcoh3kDCXVgxNu+H/GVChKMw6DCK8Pz9+foz+wleyj7lHQH3cknDOG68AE+3rV/R7fKewjff4H0QM06u39FpOLo7ZYQFCxVXKJ125RjWm7w4Y2Fy+Zfd+3wauboPx0uEZY0DNW2JWYMbXzX1M5s7Y7VhmD26MzoUQrLXpZ3BL3Ob8F265AymMSqkt9zRJuTdhPQy8r4/2hiylhugjgxxWF1KJeDuDZPMpuLgpXmkwKjq76s9T9Le3t2GZ2aTTlJGnucqdXvp37xjWnHmyCO8T4Z21XJeZ9DE9iM35Zt+dlNWRzBkg2rLWq/eBThOioqh6RWvhYutw+pIjtw52uC69K2t38huyaHv67s7+xEZDM9t+CfGAX8wpziDK9p8NSH/CFjAViNbT4gL01D01UoBPSYi789r3sKj8EKVdueslKnQswT8ju3XBgXBnDbkjeu2zQgLV3nFVq+x7nGqA6rCGKHeOaGVa4Q43fQRF4glsf6SiFkYnBr1wSgzEXAJkVeJIc5Hr0FjTRuvlA/RooWiisaEa2ZaJou3rDAzu6RIO3bDE6PPEuNm44RkqouG8C9V5wVXY/rJW7rE5h90Xtd0ibKX4QbkuxvjHunjjqmZfxNcm9ENWpQV/iOve+/ZpUEFTU5M7dOr2oHjZCTP6yXkXytOCb9F2pOIFCX8x/qK4P1l1aE/pQvH+iX2G/qb0i0Sg5jnYqRR/vwzryvjAWpgVowy88tVQkMNQaKzG4YXdH8y5Ow3nGSvFAAAAAElFTkSuQmCC"
+                            alt="Client Image"
+                          />
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="testimonials__name">Nicole Tattersal</p>
+                          <span class="testimonials__title">
+                            Former Head of Digital Engagement, Emerald
+                            Publishing
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="splide__slide">
+                      <p class="testimonials__comment">
+                        <span class="testimonials__qoute">
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        “Over and above their industry know-how and technical
+                        expertise, we have been blown away with Ribbonfish’s
+                        pragmatic and pacey outcome focused approach. The whole
+                        team are dedicated and passionate with a strong emphasis
+                        on delivering excellence. Thank you all for challenging
+                        our thinking and supporting us in delivering an industry
+                        leading technology solution with added business benefit
+                        – we’re looking forward to the next chapter!”
+                        <span class="testimonials__qoute">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                      </p>
+                      <div class="testimonials__client-wrapper">
+                        <div class="col-sm-2 testimonials__pic">
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALEAAACUCAMAAADrljhyAAAAMFBMVEXk5ueutLenrrHf4uPn6eqrsbTq7O3b3t/Jzc+4vcC1ur3Gysyxt7rX2tu9wcTR1dbDLeoMAAAEQUlEQVR4nO2c23LjIAxAMQhsDIb//9sFN93EmTQBhCW66/PQzqR9OKMR4qoIcXFxcXFxcXFxcXFxcXHxLwIZbokidk21xSURo/r+ZFhAzNFZLaXUifRrsi7OYlhno5bgtZ4OaO1DFIbb7RVGOD896d6kJ+8GzA3l5Evdm7R0aihnEIt/45uRaxwoziDsB989zuOEGbZPAb4p+3kQ5aXINyvLyO2aAVcqnJ0X/ihXCQ+hXCecagazMhTn8F05cirDVi2cYKwYIHyDsLaMdblk4nihHLh8G5L4psyVyqrNN8NjbEJjiPMSg2XBrGR7jKeZQRgsQlg7BuEZITxNnj7IleuJZ+RCbqxWVIy1JzeOqBCnIFOnBTIpOAocUjgpExvPmGK8Q5wW6KQg340YXKXYCaRpYdBJMU2WUlgodFJQT3sRLzz5jTCRYelgPFGu68H9NmMTOgiTlrf/1dj9OuPfF2NS4x61gtS4+WzlAGk9xu5AyI1F05nmE8S3Ih3WbquiFDYdYmxpV/SYA6EbtCv6HsWC+EgWdUy4I0nTONFyn3DAU59XoE9YqG/J2m6ZHiBPitZbm78hDuQXC8itnma4U1eYsactfVIgD7JYbqcBUZJXBt+cyc3KbLfpa+udKfnscQO2xhBrhmF3U24cfJyvhZrygu3qPwFNSzhG4UT9zanmFW44Sd64jSHWJQblMfdPbBXKcoh3kDCXVgxNu+H/GVChKMw6DCK8Pz9+foz+wleyj7lHQH3cknDOG68AE+3rV/R7fKewjff4H0QM06u39FpOLo7ZYQFCxVXKJ125RjWm7w4Y2Fy+Zfd+3wauboPx0uEZY0DNW2JWYMbXzX1M5s7Y7VhmD26MzoUQrLXpZ3BL3Ob8F265AymMSqkt9zRJuTdhPQy8r4/2hiylhugjgxxWF1KJeDuDZPMpuLgpXmkwKjq76s9T9Le3t2GZ2aTTlJGnucqdXvp37xjWnHmyCO8T4Z21XJeZ9DE9iM35Zt+dlNWRzBkg2rLWq/eBThOioqh6RWvhYutw+pIjtw52uC69K2t38huyaHv67s7+xEZDM9t+CfGAX8wpziDK9p8NSH/CFjAViNbT4gL01D01UoBPSYi789r3sKj8EKVdueslKnQswT8ju3XBgXBnDbkjeu2zQgLV3nFVq+x7nGqA6rCGKHeOaGVa4Q43fQRF4glsf6SiFkYnBr1wSgzEXAJkVeJIc5Hr0FjTRuvlA/RooWiisaEa2ZaJou3rDAzu6RIO3bDE6PPEuNm44RkqouG8C9V5wVXY/rJW7rE5h90Xtd0ibKX4QbkuxvjHunjjqmZfxNcm9ENWpQV/iOve+/ZpUEFTU5M7dOr2oHjZCTP6yXkXytOCb9F2pOIFCX8x/qK4P1l1aE/pQvH+iX2G/qb0i0Sg5jnYqRR/vwzryvjAWpgVowy88tVQkMNQaKzG4YXdH8y5Ow3nGSvFAAAAAElFTkSuQmCC"
+                            alt="Client Image"
+                          />
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="testimonials__name">Nicole Tattersal</p>
+                          <span class="testimonials__title">
+                            Former Head of Digital Engagement, Emerald
+                            Publishing
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="splide__slide">
+                      <p class="testimonials__comment">
+                        <span class="testimonials__qoute">
+                          <i class="fa-solid fa-quote-left"></i>
+                        </span>
+                        “Over and above their industry know-how and technical
+                        expertise, we have been blown away with Ribbonfish’s
+                        pragmatic and pacey outcome focused approach. The whole
+                        team are dedicated and passionate with a strong emphasis
+                        on delivering excellence. Thank you all for challenging
+                        our thinking and supporting us in delivering an industry
+                        leading technology solution with added business benefit
+                        – we’re looking forward to the next chapter!”
+                        <span class="testimonials__qoute">
+                          <i class="fa-solid fa-quote-right"></i>
+                        </span>
+                      </p>
+                      <div class="testimonials__client-wrapper">
+                        <div class="col-sm-2 testimonials__pic">
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALEAAACUCAMAAADrljhyAAAAMFBMVEXk5ueutLenrrHf4uPn6eqrsbTq7O3b3t/Jzc+4vcC1ur3Gysyxt7rX2tu9wcTR1dbDLeoMAAAEQUlEQVR4nO2c23LjIAxAMQhsDIb//9sFN93EmTQBhCW66/PQzqR9OKMR4qoIcXFxcXFxcXFxcXFxcXHxLwIZbokidk21xSURo/r+ZFhAzNFZLaXUifRrsi7OYlhno5bgtZ4OaO1DFIbb7RVGOD896d6kJ+8GzA3l5Evdm7R0aihnEIt/45uRaxwoziDsB989zuOEGbZPAb4p+3kQ5aXINyvLyO2aAVcqnJ0X/ihXCQ+hXCecagazMhTn8F05cirDVi2cYKwYIHyDsLaMdblk4nihHLh8G5L4psyVyqrNN8NjbEJjiPMSg2XBrGR7jKeZQRgsQlg7BuEZITxNnj7IleuJZ+RCbqxWVIy1JzeOqBCnIFOnBTIpOAocUjgpExvPmGK8Q5wW6KQg340YXKXYCaRpYdBJMU2WUlgodFJQT3sRLzz5jTCRYelgPFGu68H9NmMTOgiTlrf/1dj9OuPfF2NS4x61gtS4+WzlAGk9xu5AyI1F05nmE8S3Ih3WbquiFDYdYmxpV/SYA6EbtCv6HsWC+EgWdUy4I0nTONFyn3DAU59XoE9YqG/J2m6ZHiBPitZbm78hDuQXC8itnma4U1eYsactfVIgD7JYbqcBUZJXBt+cyc3KbLfpa+udKfnscQO2xhBrhmF3U24cfJyvhZrygu3qPwFNSzhG4UT9zanmFW44Sd64jSHWJQblMfdPbBXKcoh3kDCXVgxNu+H/GVChKMw6DCK8Pz9+foz+wleyj7lHQH3cknDOG68AE+3rV/R7fKewjff4H0QM06u39FpOLo7ZYQFCxVXKJ125RjWm7w4Y2Fy+Zfd+3wauboPx0uEZY0DNW2JWYMbXzX1M5s7Y7VhmD26MzoUQrLXpZ3BL3Ob8F265AymMSqkt9zRJuTdhPQy8r4/2hiylhugjgxxWF1KJeDuDZPMpuLgpXmkwKjq76s9T9Le3t2GZ2aTTlJGnucqdXvp37xjWnHmyCO8T4Z21XJeZ9DE9iM35Zt+dlNWRzBkg2rLWq/eBThOioqh6RWvhYutw+pIjtw52uC69K2t38huyaHv67s7+xEZDM9t+CfGAX8wpziDK9p8NSH/CFjAViNbT4gL01D01UoBPSYi789r3sKj8EKVdueslKnQswT8ju3XBgXBnDbkjeu2zQgLV3nFVq+x7nGqA6rCGKHeOaGVa4Q43fQRF4glsf6SiFkYnBr1wSgzEXAJkVeJIc5Hr0FjTRuvlA/RooWiisaEa2ZaJou3rDAzu6RIO3bDE6PPEuNm44RkqouG8C9V5wVXY/rJW7rE5h90Xtd0ibKX4QbkuxvjHunjjqmZfxNcm9ENWpQV/iOve+/ZpUEFTU5M7dOr2oHjZCTP6yXkXytOCb9F2pOIFCX8x/qK4P1l1aE/pQvH+iX2G/qb0i0Sg5jnYqRR/vwzryvjAWpgVowy88tVQkMNQaKzG4YXdH8y5Ow3nGSvFAAAAAElFTkSuQmCC"
+                            alt="Client Image"
+                          />
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="testimonials__name">Nicole Tattersal</p>
+                          <span class="testimonials__title">
+                            Former Head of Digital Engagement, Emerald
+                            Publishing
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonials__desc-wrapper">
+                <div class="col-7">
+                  <p class="section-title --flex-column">
+                    WHAT OUR <span>CUSTOMERS SAY</span>
+                  </p>
+                  <p>
+                    We love working with our clients and believe that’s one of
+                    the reasons why they keep coming back. But don’t just take
+                    our word for it…
+                  </p>
+                </div>
+                <div class="col-sm-5">
+                  <div class="testimonials__btn-wrapper">
+                    <button class="testimonials__btn --prev-btn">
+                      <i class="fa-solid fa-caret-left"></i>
+                    </button>
+                    <a href="#" class="testimonials__btn --view">View More</a>
+                    <button class="testimonials__btn --next-btn">
+                      <i class="fa-solid fa-caret-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="different-section"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+        data-aos-offset="400"
+      >
+        <div class="custom-container">
+          <div class="different">
+            <div class="col">
+              <p class="section-title --remove-margin">WHY WE ARE DIFFERENT</p>
+              <span
+                >We don’t want to meet expectations, we want to exceed them!
+              </span>
+              <p>
+                Our team has worked directly for publishing houses across the UK
+                and US collectively for well over 100 years. We understand the
+                industry and the challenges you are facing from manual
+                processes, spreadsheets to patch workflows together, and
+                reliance on key people amongst many others.
+              </p>
+              <p>
+                But also, we get that every problem is nuanced and different so
+                we think outside-the-box to tailor the right solution just for
+                you. We are a boutique firm with consultants, developers, and
+                solution architects who will work with internal teams to develop
+                the right solutions based on your requirements and growth
+                strategy.
+              </p>
+            </div>
+            <div class="col">
+              <img src="./media/diffFeatured.png" alt="Why we are different" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="git-section">
+        <div class="custom-container">
+          <div class="git__wrapper">
+            <div
+              class="col git__form"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-once="true"
+              data-aos-offset="400"
+            >
+              <p class="section-title --text-light">CONTACT US</p>
+              <div class="git__form-wrapper">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" placeholder="First Name" />
+                  </div>
+                  <div class="col-6">
+                    <input type="text" placeholder="Last Name" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" placeholder="Email Address" />
+                  </div>
+                  <div class="col-6">
+                    <input type="text" placeholder="Company" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <textarea placeholder="Message  "></textarea>
+                </div>
+                <button class="git__form-btn">SUBMIT</button>
+              </div>
+            </div>
+            <div
+              class="col git__contact"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-once="true"
+              data-aos-offset="400"
+            >
+              <div class="git__contact-wrapper">
+                <img src="./media/rfBaseLogo.png" alt="Ribbonfish" />
+                <img src="./media/rfLogoText.png" alt="Ribbonfish" />
+                <div class="git__contact-details">
+                  <span
+                    ><i class="fa-solid fa-location-dot"></i> 35 New Broad St,
+                    London EC2M 1NH, United Kingdom</span
+                  >
+                  <span
+                    ><i class="fa-regular fa-envelope"></i
+                    >contactus@ribbonfish.co.uk</span
+                  >
+                  <span><i class="fa-solid fa-phone"></i>991213113</span>
+                </div>
+                <div class="git__logos">
+                  <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                  </div>
+                  <img
+                    src="./media/Salesforce Logo.png"
+                    alt="Salesforce Partner"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="custom-container">
+        <div class="footer-section">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sucess-stories.html">Success Stories</a></li>
+            <li><a href="#">Our Commitment</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <p>
+          © Ribbonfish 2023. Registered in England and Wales, Company Number
+          6412108
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-sync@3/dist/js/splide-extension-sync.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/65e82f8b2f.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

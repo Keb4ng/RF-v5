@@ -1,0 +1,703 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ribbonfish Prototype V5</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- splide  -->
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        class="header-nav"
+        data-aos="fade-in"
+        data-aos-delay="100"
+        data-aos-once="true"
+      >
+        <div class="header-nav__logo">
+          <a href="./index.html"
+            ><img src="./media/rfLogo.png" alt="Ribbonfish Logo" />
+          </a>
+        </div>
+        <ul class="header-nav__links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Our Commitment</a>
+          </li>
+          <li>
+            <a href="./sucess-stories.html">Success Stories</a>
+          </li>
+          <li>
+            <a href="./about-us.html">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mobile-header">
+      <div class="mobile-header__logo">
+        <img src="./media/rfBaseLogo.png" alt="Ribbonfish Logo" />
+      </div>
+      <button class="mobile-header__btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="mobile-header__overlay">
+        <div class="mobile-header__menu">
+          <button class="mobile-header__close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="mobile-header__menu-logo">
+            <img src="./media/rfLogo.png" alt="Ribbonfish" />
+          </div>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Our Commitment</a>
+            </li>
+            <li>
+              <a href="./sucess-stories.html">Success Stories</a>
+            </li>
+            <li>
+              <a href="./about-us.html">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="ip-banner">
+      <p
+        class="banner-tagline"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+      >
+        <span>OUR TEAM:</span>
+        YOUR FUTURE SUCCESS
+      </p>
+    </section>
+
+    <div class="custom-container">
+      <p
+        class="ip-breadcrumbs"
+        data-aos="fade-in"
+        data-aos-delay="600"
+        data-aos-once="true"
+      >
+        Home / About
+      </p>
+    </div>
+
+    <section class="expert-consultants">
+      <div class="custom-container">
+        <div
+          class="ip-featured"
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-once="true"
+          data-aos-offset="400"
+        >
+          <div class="col">
+            <img src="./media/aboutHeadline.png" alt="Consultants" />
+          </div>
+          <div
+            class="col"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-once="true"
+            data-aos-offset="400"
+          >
+            <p class="section-title --remove-mxw">
+              EXPERT CONSULTANTS IN CRM AND SALESFORCE
+            </p>
+            <p>
+              Our London and New Delhi teams share outstanding technical skills,
+              a long held passion for the publishing and media industries, and a
+              desire to provide phenomenal customer service. This means we can
+              deliver unbeatable results – whether providing consultancy
+              services to facilitate solutions to complex CRM problems or
+              delivering Salesforce applications that transform your business.
+            </p>
+            <p>
+              We have decades of publishing experience, having managed and
+              delivered global business applications for world-leading
+              publishers, and we employ the brightest apprentices and graduates
+              to help us stay ahead of the curve with modern-day alternatives to
+              legacy solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div
+        class="custom-container"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+        data-aos-offset="400"
+      >
+        <div class="rf-team row">
+          <div class="col col-lg-6 splide-cnt">
+            <div class="splide mainTeamSplide" aria-label="team-splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="rf-team__content">
+                      <div class="rf-team__pic">
+                        <img src="./media/team/signe.png" alt="Signe" />
+                      </div>
+                      <div class="rf-team__name">
+                        <p>Signe Thomsen</p>
+                        <p>DEVELOPER</p>
+                      </div>
+                      <div class="rf-team__details">
+                        Signe is a recent convert to the Salesforce eco system.
+                        She is interested in building efficient solutions to
+                        deliver highly useable experiences and has been working
+                        with Salesforce CPQ and Marketing Cloud. She is always
+                        on board to tackle a fresh challenge.
+                      </div>
+                      <div class="rf-team__contacts">
+                        <p>
+                          <i class="fa-regular fa-envelope"></i>ribbonfish.co.uk
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i>987654321</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="rf-team__content">
+                      <div class="rf-team__pic">
+                        <img src="./media/team/chris.png" alt="Chris" />
+                      </div>
+                      <div class="rf-team__name">
+                        <p>Chris Trainor</p>
+                        <p>SENIOR CONSULTANT</p>
+                      </div>
+                      <div class="rf-team__details">
+                        Having started as an apprentice doing .NET 8 years ago,
+                        Chris has since become a talented Salesforce developer
+                        and integration specialist ensuring all customer
+                        requirements and benefits are realised.
+                      </div>
+                      <div class="rf-team__contacts">
+                        <p>
+                          <i class="fa-regular fa-envelope"></i>ribbonfish.co.uk
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i>987654321</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="rf-team__content">
+                      <div class="rf-team__pic">
+                        <img src="./media/team/ali.jpeg" alt="Ali" />
+                      </div>
+                      <div class="rf-team__name">
+                        <p>Ali Zaidi</p>
+                        <p>SENIOR CONSULTANT</p>
+                      </div>
+                      <div class="rf-team__details">
+                        With more than a decade of dedicated engagement within
+                        the Salesforce ecosystem, Ali has cultivated extensive
+                        expertise encompassing configuration, development,
+                        architecture, and DevOps methodologies. Demonstrating
+                        adeptness across these domains, Ali serves as a
+                        technical lead, architect, and advisor in facilitating
+                        digital transformation initiatives.
+                      </div>
+                      <div class="rf-team__contacts">
+                        <p>
+                          <i class="fa-regular fa-envelope"></i>ribbonfish.co.uk
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i>987654321</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="rf-team__content">
+                      <div class="rf-team__pic">
+                        <img src="./media/team/Alex.png" alt="Alex" />
+                      </div>
+                      <div class="rf-team__name">
+                        <p>Alex Kapp</p>
+                        <p>PROJECT MANAGER</p>
+                      </div>
+                      <div class="rf-team__details">
+                        Alex has over 20 years experience in various operational
+                        and technical roles within STM and Educational
+                        publishing. This brings a wealth of business expertise
+                        and a real understanding of client requirements.
+                      </div>
+                      <div class="rf-team__contacts">
+                        <p>
+                          <i class="fa-regular fa-envelope"></i>ribbonfish.co.uk
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i>987654321</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="splide-cnt__btn --team-prev">
+              <img src="./media/prev.png" alt="Prev Slide" />
+            </button>
+            <button class="splide-cnt__btn --team-next">
+              <img src="./media/next.png" alt="Next Slide" />
+            </button>
+          </div>
+          <div class="col rf-team__prev-cont">
+            <div class="rf-team-desc">
+              <p class="section-title">
+                <span>MEET THE </span> RIBBONFISH TEAM
+              </p>
+              <p class="rf-team__tagline">
+                At Ribbonfish, we work closely with our customers to optimise
+                business processes and create integrated and innovative
+                experiences for their employees and clients. Our agile team is
+                headed up by a team of executives with experiences from both the
+                client and vendor side, and is supported by colleagues in New
+                Delhi.
+              </p>
+            </div>
+            <div class="rf-team__prev">
+              <div class="splide prevTeamSplide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="rf-team__prev-img">
+                        <img src="./media/team/signe.png" alt="Signe" />
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="rf-team__prev-img">
+                        <img src="./media/team/chris.png" alt="Chris" />
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="rf-team__prev-img">
+                        <img src="./media/team/ali.jpeg" alt="Ali" />
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="rf-team__prev-img">
+                        <img src="./media/team/Alex.png" alt="Alex" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team-section__bg"></div>
+    </section>
+
+    <section class="what-we-do">
+      <div
+        class="custom-container"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+      >
+        <div class="ip-featured --row-col-reverse">
+          <div class="col">
+            <img src="./media/wwd.png" alt="Consultants" />
+          </div>
+          <div class="col">
+            <p class="section-title">
+              WHAT WE DO
+            </p>
+            <p>
+              We work with publishers to streamline workflow and transform
+              business processes. Once a functionality gap or a workflow
+              inefficiency has been identified, we leverage Salesforce as a low
+              code platform to develop customer specific solutions, with modules
+              like Publicity or Advertising, which can then be adapted by our
+              other customers.
+            </p>
+            <p>
+              In addition, we also work to implement standard Salesforce CRM,
+              Case Management, Marketing Cloud modules and integrate them with
+              the existing technology architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wwd-slider">
+      <div
+        class="custom-container"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+      >
+        <div class="splide wwd__splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-cloud"></i>
+                  <p class="wwd-slide__title">Salesforce Accelerators</p>
+                  <p class="wwd-slide__desc">
+                    In response to common issues faced by publishers globally,
+                    we have developed a number of solutions including a CRM
+                    accelerator adapted to the needs of publishers, a publicity
+                    module to manage lists, and an advertising module to book ad
+                    campaigns for new products and more! The modules are
+                    designed to be able to minimise implementation times and
+                    allow teams to focus on delivering value to customers.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                  <p class="wwd-slide__title">Salesforce Rollouts</p>
+                  <p class="wwd-slide__desc">
+                    We transform companies by implementing, enhancing and
+                    integrating the Salesforce ecosystem: Salesforce CRM and CPQ
+                    to consolidate your customer data, gain insights and sell
+                    smarter; Service Cloud to retain your customers and enhance
+                    their experience; and Marketing Cloud and Pardot to ensure
+                    your long-term success with marketing automation.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-desktop"></i>
+                  <p class="wwd-slide__title">Salesforce Apps</p>
+                  <p class="wwd-slide__desc">
+                    Get even more out of Salesforce with pre-built solutions.
+                    With our partners Rights2 Consultants, we developed and
+                    launched RightsZone – the next generation rights system with
+                    elegant and intuitive workflow tools facilitating the whole
+                    lifecycle of rights licensing, helping you manage deals
+                    swiftly and efficiently, and facilitating smarter working to
+                    grow your revenue.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-regular fa-lightbulb"></i>
+                  <p class="wwd-slide__title">Consultancy</p>
+                  <p class="wwd-slide__desc">
+                    We provide strategy and consulting to help you transform
+                    your company – whether that’s to drive growth, secure
+                    efficiencies or diversify your business. We can work with
+                    you to align your technology and business strategies and
+                    create a robust, costed technology roadmap with dependencies
+                    that ensures you realise the benefits of the digital
+                    transformation you are seeking.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-user-secret"></i>
+                  <p class="wwd-slide__title">System Reviews</p>
+                  <p class="wwd-slide__desc">
+                    From submissions, editorial and production to sales,
+                    marketing, publicity and across the whole workflow, insights
+                    and reporting capabilities, we review your software across
+                    the entire publishing lifecycle. You’ll receive a report
+                    reviewing the product’s architecture, security,
+                    infrastructure, functionality, people, process and
+                    governance and a list of prioritised recommendations.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <p class="wwd-slide__title">Support</p>
+                  <p class="wwd-slide__desc">
+                    To maintain your Salesforce applications, we provide support
+                    services ranging from just 4 days a month to a dedicated
+                    individual for 5 days a week – and all the way through to an
+                    entire team. We can work alongside your internal technology
+                    support team, or we can provide the complete service –
+                    working with your business users to help them get the most
+                    out of your systems.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="splide-cnt__btn --wwd-prev">
+          <img src="./media/prev.png" alt="Prev Slide" />
+        </button>
+        <button class="splide-cnt__btn --wwd-next">
+          <img src="./media/next.png" alt="Next Slide" />
+        </button>
+      </div>
+    </section>
+
+    <section class="our-mission">
+      <div
+        class="custom-container"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+      >
+        <div class="ip-featured">
+          <div class="col">
+            <img src="./media/ourmission.png" alt="Consultants" />
+          </div>
+          <div class="col">
+            <p class="section-title">
+              OUR MISSION
+            </p>
+            <p>
+              We aim to empower publishers through innovative technological
+              solutions to achieve success through seamless workflows and
+              enhanced business processes whilst putting our customers and users
+              at the heart of the solution. Our tailored approaches not only
+              address unique challenges but foster a community of shared
+              progress, where solutions evolve collectively benefiting all
+              stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-mission-slider">
+      <div
+        class="custom-container"
+        data-aos="fade-in"
+        data-aos-delay="400"
+        data-aos-once="true"
+      >
+        <div class="splide om__splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-regular fa-star"></i>
+                  <p class="wwd-slide__title">Passion-Driven Excellence</p>
+                  <p class="wwd-slide__desc">
+                    We delve into each project with enthusiasm, aiming not just
+                    to meet, but to exceed expectations. Through our fervor, we
+                    strive to be more than just a solutions provider; we aim to
+                    be a valued partner in our client’s journey towards
+                    streamlined operations and sustained growth.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-regular fa-lightbulb"></i>
+                  <p class="wwd-slide__title">Innovation</p>
+                  <p class="wwd-slide__desc">
+                    We strive for a culture of continuous improvement and
+                    innovation to provide cutting-edge solutions. Our approach
+                    is rooted in understanding the evolving needs of the
+                    publishing sector and leveraging the power of Salesforce to
+                    meet these needs.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-user"></i>
+                  <p class="wwd-slide__title">Customer-Centricity</p>
+                  <p class="wwd-slide__desc">
+                    Every functionality gap and workflow inefficiency presents
+                    an opportunity to create value. We listen, we analyze, and
+                    we tailor our solutions to meet the unique needs of each
+                    customer. We believe in building relationships based on
+                    trust and long-term collaboration.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                  <p class="wwd-slide__title">Collaborative Evolution</p>
+                  <p class="wwd-slide__desc">
+                    We value the power of shared progress. When one client
+                    benefits from a solution, the ripple effect can be felt
+                    across our entire customer base. Our environment encourages
+                    learning, sharing, and adapting solutions collectively,
+                    forging a path of shared success.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-fish"></i>
+                  <p class="wwd-slide__title">Sustainable Transformation</p>
+                  <p class="wwd-slide__desc">
+                    We aim for solutions that not only resolve present
+                    challenges but are adaptable to future changes, ensuring a
+                    sustainable transformation of business processes. Our
+                    responsibility extends beyond immediate solutions to
+                    creating a legacy of enduring value.
+                  </p>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="wwd-slide">
+                  <i class="fa-solid fa-heart-circle-check"></i>
+                  <p class="wwd-slide__title">Ethical Integrity</p>
+                  <p class="wwd-slide__desc">
+                    We conduct our business with the highest standards of
+                    professional ethics, transparency, and accountability. Our
+                    reputation is built on the trust and reliability perceived
+                    by our clients and partners.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="splide-cnt__btn --wwd-prev">
+          <img src="./media/prev.png" alt="Prev Slide" />
+        </button>
+        <button class="splide-cnt__btn --wwd-next">
+          <img src="./media/next.png" alt="Next Slide" />
+        </button>
+      </div>
+    </section>
+
+    <section class="git-section">
+      <div class="custom-container">
+        <div class="git__wrapper">
+          <div
+            class="col git__form"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-once="true"
+            data-aos-offset="400"
+          >
+            <p class="section-title --text-light">CONTACT US</p>
+            <div class="git__form-wrapper">
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" placeholder="First Name" />
+                </div>
+                <div class="col-6">
+                  <input type="text" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <input type="text" placeholder="Email Address" />
+                </div>
+                <div class="col-6">
+                  <input type="text" placeholder="Company" />
+                </div>
+              </div>
+              <div class="col-12">
+                <textarea placeholder="Message  "></textarea>
+              </div>
+              <button class="git__form-btn">SUBMIT</button>
+            </div>
+          </div>
+          <div
+            class="col git__contact"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-once="true"
+            data-aos-offset="400"
+          >
+            <div class="git__contact-wrapper">
+              <img src="./media/rfBaseLogo.png" alt="Ribbonfish" />
+              <img src="./media/rfLogoText.png" alt="Ribbonfish" />
+              <div class="git__contact-details">
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> 35 New Broad St,
+                  London EC2M 1NH, United Kingdom</span
+                >
+                <span
+                  ><i class="fa-regular fa-envelope"></i
+                  >contactus@ribbonfish.co.uk</span
+                >
+                <span><i class="fa-solid fa-phone"></i>991213113</span>
+              </div>
+              <div class="git__logos">
+                <div>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+                <img
+                  src="./media/Salesforce Logo.png"
+                  alt="Salesforce Partner"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="custom-container">
+        <div class="footer-section">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sucess-stories.html">Success Stories</a></li>
+            <li><a href="#">Our Commitment</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <p>
+          © Ribbonfish 2023. Registered in England and Wales, Company Number
+          6412108
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-sync@3/dist/js/splide-extension-sync.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/65e82f8b2f.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
