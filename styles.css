@@ -46,6 +46,7 @@ li{
     height: auto;
     padding: 0 1rem;
     overflow: hidden;
+    z-index: 3;
 }
 
 .header{
