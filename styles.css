@@ -2,7 +2,7 @@
     --primary-font:  "Poppins", sans-serif;
     --secondary-font: "Montserrat", sans-serif;
     --primary-clr: #F9CF1E;
-    --secondary-clr: rgba(13,40,70, 1);
+    --secondary-clr:#242424;
 }
 
 *{
@@ -208,7 +208,7 @@ li{
 }
 
 .mobile-header__menu-logo{
-    width: 250px;
+    width: 120px;
     height: auto;
 }
 
@@ -726,7 +726,7 @@ li{
     max-width: 600px;
     height: auto;
     padding: 5rem 2.7rem 2rem;
-    background-color: #242424;
+    background-color: var(--secondary-clr);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -843,7 +843,7 @@ li{
     background-color:transparent;
     border: 0;
     font-size: 2.5rem;
-    color: #242424;
+    color: var(--secondary-clr);
     transition: 500ms;
 }
 
@@ -903,7 +903,7 @@ li{
 }
 
 .git-section{
-    background-color: #242424;
+    background-color: var(--secondary-clr);
     padding: 3.438rem 0;
 }
 
@@ -1010,7 +1010,7 @@ li{
 }
 
 footer{
-    background-color: #242424;
+    background-color: var(--secondary-clr);
     padding: 3.438rem 0 1rem;
     color: #bdbdbd;
     border-top: solid 2px #bdbdbd;
@@ -1108,7 +1108,7 @@ footer{
     width: 100%;
     height: auto;
     position: relative;
-    background-color: #242424;
+    background-color: var(--secondary-clr);
 }
 
 .team-section__bg{
@@ -1266,8 +1266,13 @@ footer{
     left: unset;
 }
 
-.what-we-do, .our-mission{
+.what-we-do, .our-mission, .socmed-section, .video-section{
     padding: 3.75rem 0;
+}
+
+.video-section video{
+    width: 100%;
+    height: auto;
 }
 
 .--row-col-reverse{
@@ -1368,7 +1373,7 @@ footer{
     max-height: 250px;
     height: 20%;
     width: 100%;
-    background-color: #242424;
+    background-color: var(--secondary-clr);
     color: white;
     text-align: center;
     font-weight: bold;
@@ -1442,6 +1447,103 @@ footer{
     text-align:center;
     font-weight: bold;
 }
+
+.socmed{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.socmed__posts a img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.socmed__icons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 240px;
+}
+
+.socmed__icons a i{
+    font-size: 70px;
+}
+
+.socmed__icons-col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--secondary-clr);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    min-height: 180px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: 300ms;
+}
+
+.socmed__icons-col:hover{
+    color:var(--secondary-clr);
+    background-color: white;
+}
+
+.--col-lightbg{
+    color: var(--secondary-clr);
+    background-color: white;
+}
+
+.--col-lightbg:hover{
+    color: white;  
+    background-color: var(--secondary-clr);
+}
+
+.socmed__posts{
+    gap: 0.5rem;
+}
+
+.socmed__posts a{
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.socmed__posts a:before{
+    background-color: black;
+    content:"";
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 300ms;
+    z-index: 1;
+}
+
+.socmed__posts a:after{
+    content: "";
+    width: 100%;
+    height: 40%;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 300ms;
+    background-image: linear-gradient(to top, rgba(249, 207, 30, 0.8), transparent);
+    z-index: 2;
+}
+
+.socmed__posts a:hover:before{
+    opacity: 0.3;
+}
+
 
 @media only screen and (max-width: 991px) {
     .header{
@@ -1520,6 +1622,21 @@ footer{
     .expertise__featured{
         display: block;
         margin: auto;
+    }
+    .socmed{
+        flex-direction: column;
+    }
+    .socmed__icons{
+        flex-direction: row;
+    }
+    .socmed__posts{
+        flex-direction: column;
+    }
+    .socmed__posts a{
+        max-width: 360px;
+    }
+    .--remove-mxw{
+        text-align:center;
     }
   }
 
