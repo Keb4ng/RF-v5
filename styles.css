@@ -57,7 +57,7 @@ li{
     height: 11.25rem;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(13,40,70, 0.8), transparent);
+    background-image: linear-gradient(to bottom, rgba(249,207,30, 0.8), transparent);
     top: 0;
     left: 0;
     z-index: 100;
@@ -67,7 +67,8 @@ li{
 
 .header--active{
     height: 5rem;
-    background-image: linear-gradient(to bottom, var(--secondary-clr),  var(--secondary-clr));
+    background-image: linear-gradient(to bottom, rgba(249,207,30, 0.99),  rgba(249,207,30, 0.99));
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .header-nav{
@@ -96,10 +97,26 @@ li{
     color: white;
     text-decoration: none;
     transition: 500ms;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.header-nav__links li a:hover{
-    color: var(--primary-clr);
+.header-nav__links li a:before{
+    content:"";
+    height: 3px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 300ms;
+}
+
+.header-nav__links li a:hover:before{
+    width: 100%;
 }
 
 .header-nav__logo{
@@ -111,6 +128,7 @@ li{
     width: auto;
     height: 100%;
     object-fit: cover;
+    filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .mobile-header{
@@ -121,13 +139,14 @@ li{
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: var(--secondary-clr);
-    padding: 1rem 2rem;
+    background-color: white;
+    padding: 0.3rem 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .mobile-header__btn{
     font-size: 1.5rem;
-    color: white;
+    color: var(--primary-clr);
     border: 0;
     background-color: transparent;
 }
@@ -167,7 +186,7 @@ li{
     min-width: 290px;
     float: right;
     position: absolute;
-    background-color: var(--secondary-clr);
+    background-color: white;
     top: 0;
     right: 0;
     align-items:center;
@@ -179,7 +198,7 @@ li{
 }
 
 .mobile-header__close-btn{
-    color:white;
+    color: black;
     font-size: 2rem;
     position: absolute;
     top: 1vw;
@@ -206,8 +225,9 @@ li{
 }
 
 .mobile-header__menu ul li a{
-    color:white;
+    color:black;
     text-decoration: none;
+    font-family: var(--primary-font);
 }
 
 .banner{
@@ -245,8 +265,11 @@ li{
 }
 
 .banner__tagline p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
+    padding-left: 4px;
+    font-weight: 500;
+    line-height: 25px;
 }
 
 .banner__tagline h1{
@@ -518,6 +541,12 @@ li{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.expertise__featured{
+    position: relative;
 }
 
 .expertise__featured img{
@@ -526,7 +555,33 @@ li{
     height: auto;
     object-fit: cover;
     display: block;
-    margin:auto;
+    margin: auto;
+}
+
+.expertise__label{
+    position: absolute;
+    background-color: white;
+    padding: 2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.expertise__label p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.expertise__label span{
+    font-size: 0.9rem;
+    color: gray;
 }
 
 .expertise__logos{
@@ -580,10 +635,10 @@ li{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: var(--secondary-clr);
+    background-color: #000;
     top: 0;
     left: 0;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .--text-light{
@@ -625,7 +680,7 @@ li{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(13,40,70, 0.8);
+    background-color: rgba(249,207,30, 0.8);
     padding: 3.75rem 1.5rem;
     max-width: 18.75rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -671,7 +726,7 @@ li{
     max-width: 600px;
     height: auto;
     padding: 5rem 2.7rem 2rem;
-    background-color: var(--secondary-clr);
+    background-color: #242424;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -717,9 +772,12 @@ li{
 
 .testimonials__title{
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.89rem;
     color: #e0e0e0;
     font-family: var(--primary-font);
+    display: flex;
+    width: max-content;
+    flex-direction: column;
 }
 
 .testimonials__client-wrapper{
@@ -729,6 +787,7 @@ li{
     color: white;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .testimonials__qoute{
@@ -736,6 +795,7 @@ li{
     position: absolute;
     left: 0;
     top: -3rem;
+    color: var(--primary-clr);
 }
 
 .testimonials__qoute:nth-child(2){
@@ -783,7 +843,7 @@ li{
     background-color:transparent;
     border: 0;
     font-size: 2.5rem;
-    color: var(--secondary-clr);
+    color: #242424;
     transition: 500ms;
 }
 
@@ -843,7 +903,7 @@ li{
 }
 
 .git-section{
-    background-color: var(--secondary-clr);
+    background-color: #242424;
     padding: 3.438rem 0;
 }
 
@@ -882,6 +942,11 @@ li{
     font-size: 1.3rem;
 }
 
+.git__contact-details span{
+    display: flex;
+    align-items: center;
+}
+
 .git__logos{
     display: flex;
     flex-direction: row;
@@ -889,6 +954,15 @@ li{
     align-items: center;
     font-size: 2.5rem;
     width: 100%;
+}
+
+.git__logos a i{
+    color: white;
+    transition: 300ms;
+}
+
+.git__logos a:hover i{
+    color: var(--primary-clr);
 }
 
 .git__form-wrapper{
@@ -936,7 +1010,7 @@ li{
 }
 
 footer{
-    background-color: var(--secondary-clr);
+    background-color: #242424;
     padding: 3.438rem 0 1rem;
     color: #bdbdbd;
     border-top: solid 2px #bdbdbd;
@@ -992,9 +1066,10 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     font-weight: bold;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     position: relative;
     z-index: 2;
+    line-height: 55px;
 }
 
 .ip-breadcrumbs{
@@ -1033,7 +1108,7 @@ footer{
     width: 100%;
     height: auto;
     position: relative;
-    background-color: var(--secondary-clr);
+    background-color: #242424;
 }
 
 .team-section__bg{
@@ -1293,7 +1368,7 @@ footer{
     max-height: 250px;
     height: 20%;
     width: 100%;
-    background-color: var(--secondary-clr);
+    background-color: #242424;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -1442,6 +1517,10 @@ footer{
     .rf-team{
         flex-direction: column-reverse;
     }
+    .expertise__featured{
+        display: block;
+        margin: auto;
+    }
   }
 
 @media only screen and (max-width: 567px) {
@@ -1468,10 +1547,6 @@ footer{
     .testimonials .splide__slide {
         padding: 5rem 0.7rem 2rem;
     }
-    .testimonials__name{
-        text-align:center;
-    }
-
     .git__contact-wrapper img{
         max-width: 180px;
     }
@@ -1486,5 +1561,8 @@ footer{
         font-size: 2.5rem;
         text-align: center;
         align-items: center;
+    }
+    .testimonials__title, .testimonials__name{
+        text-align:center;
     }
 }

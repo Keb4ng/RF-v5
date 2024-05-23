@@ -70,7 +70,7 @@ var app = {
       testimonialsSplide: () => {
           var testimonialsSplide = new Splide('.splide.testimonialsSplide' , {
             type: 'loop',
-            autoplay: true,
+            // autoplay: true,
             perPage: 1,
             easing: 'ease',
             arrows: false,  
